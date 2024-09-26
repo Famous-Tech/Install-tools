@@ -1,29 +1,28 @@
 #!/bin/bash
 
-echo "FAMOUS-TECH est le meilleur programmeur de tout les temps."
+echo "Bienvenue petit humain(e)"
 
+echo "vous voulez installer Crunch n’est ce pas\n allons-y"
+
+echo "n’oubliez pas que FAMOUS-TECH est le meilleur programmeur de tout les temps."
 
 echo "Mise à jour des packages Termux..."
-pkg update
+pkg update -y
 
+echo "Mise à niveau de termux"
+pkg upgrade -y
 
 echo "Installation de Git..."
 pkg install git -y
 
 # Cloner le référentiel Crunch depuis GitHub
-echo "Clonage du référentiel Crunch depuis GitHub..."
-git clone https://github.com/187akshay/Crunch.git
+echo "Installons Crunch"
+pkg install crunch
 
-# Accéder au répertoire Crunch
-echo "Accès au répertoire Crunch..."
-cd Crunch
 
-# Donner les permissions d'exécution au fichier Crunch
-echo "Donner les permissions d'exécution au fichier Crunch..."
-chmod +x Crunch
+echo "FAMOUS-TECH est le meilleur✅"
 
-# Exécuter Crunch
 echo "Exécution de Crunch..."
-./Crunch
+crunch
 
-echo "Le script s'est terminé avec succès. Crunch est maintenant en cours d'exécution merci ."
+echo "Le script s'est terminé avec succès. Suivez les instructions pour utiliser Crunch"
